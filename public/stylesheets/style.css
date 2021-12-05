@@ -1,5 +1,13 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #342000;
+    --secondary-color: #d9ead3;
+    --tertiary-color: #4B6858;
 }
   
 body, html {
@@ -7,16 +15,201 @@ body, html {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    color: #333;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
   
 a {
     text-decoration: none;
-    color: #225ca3;
+    color: #342000;
     font-weight: bold;
     transition: color .1s;
 }
   
 a:hover {
     color: #3486eb;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px 0px 20px 40px;
+}
+
+header a, .details a {
+    color: var(--secondary-color);
+}
+
+header a:hover, .edit-link-container a:hover, .details a:hover, 
+.login-form a:hover, article a:hover, .sign-up-form a:hover {
+    color: var(--tertiary-color);
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header h1 a {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px gray;
+}
+
+header button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+}
+
+header button:hover {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a, nav button{
+    margin-right: 30px;
+}
+
+main {
+    margin: 15px 25px 15px 25px;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+li {
+    border: 3px solid var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.title {
+    background-color: var(--primary-color);
+    color: rgb(197, 197, 197);
+    padding: 10px;
+    font-size: larger;
+}
+
+.content {
+    padding: 10px;
+}
+
+.details, .edit-link-container {
+    background-color: var(--primary-color);
+    color: rgb(197, 197, 197);
+    padding: 10px;
+    font-size: small;
+}
+
+.edit-link-container a {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: small;
+}
+
+.create-new-post-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.create-new-post-section h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    border-radius: 5px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-new-post {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-new-post input, .form-new-post textarea,
+.form-edit-post input, .form-edit-post textarea,
+.sign-up-form input, .sign-up-form textarea {
+    width: 300px;
+}
+
+.form-new-post button, .comment-form button,
+.login-form button, .sign-up-form button {
+    width: 300px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+    font-size: large;
+}
+
+.form-new-post button:hover, .comment-form button:hover,
+.login-form button:hover, .sign-up-form button:hover {
+    width: 300px;
+    background-color: #6e4400;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+    font-size: large;
+    cursor: pointer;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h2 {
+    margin-bottom: 5px;
+}
+
+.form-edit-post div{
+    margin-bottom: 15px;
+}
+
+.form-edit-post button {
+    width: 150px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+    font-size: large;
+}
+
+.form-edit-post button:hover {
+    width: 150px;
+    background-color: #6e4400;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.comment-form textarea, .login-form input, .login-form textarea {
+    width: 300px;
 }
