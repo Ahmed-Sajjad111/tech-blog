@@ -7,6 +7,7 @@ class Post extends Model {}
 // define table columns and their configuration
 Post.init(
     {
+        // define the id column
         id: {
             type: DataTypes.INTEGER,
             allowNull: false,
@@ -17,7 +18,7 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        contents: {
+        content: {
             type: DataTypes.STRING,
             allowNull: false
         },
@@ -37,4 +38,4 @@ Post.init(
     }
 );
 
-module.exports = Post; 
+module.exports = Post;
