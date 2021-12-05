@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
-const { post } = require('./home-routes');
 
 // get all posts for dashboard
 router.get('/', withAuth, (req, res) => {
@@ -92,3 +91,5 @@ router.get('/edit/:id', withAuth, (req, res) => {
         res.status(500).json(err);
     });
 });
+
+module.exports = router;
