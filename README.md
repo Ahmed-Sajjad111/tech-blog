@@ -3,7 +3,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
-Tech Blog is a web application where users can .
+Tech Blog is a web application where users can post and comment about technology. If users are not logged in however, they may still view all posts.
 
 ## Built With
 * JavaScript
