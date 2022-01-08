@@ -117,7 +117,7 @@ router.put('/:id', withAuth, (req, res) => {
             res.status(404).json({ message: 'No post found with this id' });
             return;
         }
-        res.json(dbPostDat);
+        res.json(dbPostData);
     })
     .catch(err => {
         console.log(err);
