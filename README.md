@@ -30,7 +30,7 @@ To install the application, follow these instructions:
 Clone the [repository](https://github.com/Ahmed-Sajjad111/E-Commerce-Back-End) to your local files, and install [Node.js](https://nodejs.org/en/)
 
 ## Usage
-Open application with any command prompt interface that you prefer and type in "npm install" After all the packages are installed, connect to the database run mysql -u root -p and enter password from .env file. Then source the schema.sql. To connect to the server run npm start.
+Open application with any command prompt interface that you prefer and type in "npm install". Create a .env file with the variables "process.env.DB_NAME, process.env.DB_USER, process.env.DB_PW" After all the packages are installed, connect to the database run mysql -u root -p and enter password from .env file. Then source the schema.sql by typing in "source schema.sql". To connect to the server run "npm start".
 
 ## License
 This project is licensed under [MIT](https://opensource.org/licenses/MIT)
